@@ -63,7 +63,7 @@ void Game::handleEvents() {
         is_running_ = false;
         break;
       case SDL_EVENT_KEY_DOWN:
-        switch ((event.key.scancode)) {
+        switch ((event.key.keysym.sym)) {
           case SDL_SCANCODE_UP:
             snake_.newDirection(gamestatus::Direction::UP);
             break;
