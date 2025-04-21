@@ -64,16 +64,16 @@ void Game::handleEvents() {
         break;
       case SDL_EVENT_KEY_DOWN:
         switch ((event.key.keysym.sym)) {
-          case SDL_SCANCODE_UP:
+          case SDLK_UP:
             snake_.newDirection(gamestatus::Direction::UP);
             break;
-          case SDL_SCANCODE_DOWN:
+          case SDLK_DOWN:
             snake_.newDirection(gamestatus::Direction::DOWN);
             break;
-          case SDL_SCANCODE_LEFT:
+          case SDLK_LEFT:
             snake_.newDirection(gamestatus::Direction::LEFT);
             break;
-          case SDL_SCANCODE_RIGHT:
+          case SDLK_RIGHT:
             snake_.newDirection(gamestatus::Direction::RIGHT);
             break;
           default:
